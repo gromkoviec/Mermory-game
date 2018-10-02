@@ -1,0 +1,156 @@
+html {
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(../img/bcg/bcg2.jpg);
+  background-size: cover;
+	margin:0;
+	padding: 0em 0em 0em 0em; /* górny padding takisam jak szerokość paska NAV; jeżeli "0" obraz wchodzi pod menu*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+  text-shadow:0 0 6px white;
+  width:100%;
+  height:100%;
+}
+
+h1{
+    font-size: 3rem;
+    text-align:center;
+    background: white;
+}
+.buttons{
+    width: 100%;
+    height: auto;   
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.btn{
+     width: 200px;
+    font-size: 2rem;
+    text-align:center;
+    background-color: #BBACC1;
+    border-color: #b80e09;
+    border-style: solid;   
+    border-radius: 5px;
+    margin: 3rem 1rem 3rem  1rem;
+}
+
+.btn:hover{
+    background-color: #0078C1;
+    cursor: pointer; 
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-align:center;
+    background: white;
+}
+
+p {
+    font-size: 2rem;
+    text-align:center;
+    padding: 1rem 2rem 1rem 2rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.3rem;
+    line-height: 1.5;
+    margin: 1rem;
+    background: white;
+}
+
+.game{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; /* wyśrodkowanie */
+    text-align: center;   
+}
+
+.game32{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; /* wyśrodkowanie */
+    text-align: center;      
+}
+
+.field{
+    background-image: url(../img/cov.jpg); background-repeat: no-repeat;   
+    background-position: center; 
+    background-size:cover;
+    width:  200px;
+    height: 200px;
+    text-align: center;
+    display:inline-block;
+    margin: 3px;
+    border: 4px solid #00ff03;
+    border-radius: 4px ;
+    cursor: pointer;  
+    filter: brightness(80%);  
+    transition: all .3s ease-in-out;
+}
+
+.field:hover{
+    border: 4px solid #ff6c00;
+    filter: brightness(100%);    
+}
+
+.fieldA{
+    background-image: url(../img/cov.jpg);   background-repeat: no-repeat; 
+    background-position: center; 
+    background-size:cover;
+    width:  200px;
+    height: 200px;
+    text-align: center;
+    display:inline-block;
+    margin: 3px;
+    border: 4px solid #00ff03;
+    border-radius: 4px ;
+    cursor: default;  
+    filter: brightness(100%);  
+    transition: all .3s ease-in-out;
+}
+
+.score{
+    margin: 5px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-align: center;
+    background: white;
+}
+
+/*----------------RESPONSIVE--------------------------*/
+
+@media screen and (min-width: 998px){
+  .game{
+      width: 870px;
+  }
+  .game32{
+    width: 110rem;
+  }
+} 
+
+@media screen and (max-width: 719px){   
+  .field{
+    width:  150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 568px) /*Mobilene*/ { 
+   .field{
+      width: 100px;
+      height: 100px; 
+  }
+    .fieldA{
+      width: 100px;
+      height: 100px;   
+  }
+  
+}
+
+	
+	
+	

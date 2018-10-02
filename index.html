@@ -1,0 +1,52 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <!-- tytuł strony (na zakładce) --> 
+    <title>Memory&nbsp;game</title>        
+        <!-- ikona na karcie zakładki -->      
+    <link rel="Shortcut icon" href="images/ico/brain01.png">      
+        <!-- opis dla google wyświtlany pod tytułem -->
+	  <meta name= "description" content="Memory game- game allowing you to develop your memory.."> 
+        <!-- wyszukiewanie keywords dla google do 20 (optymalnie do10) -->
+    <meta name= "keyword" content="memory game, memory, game">
+    <meta name="author" content="KWK">
+        <!-- kompatybilność wsteczna -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+        <!-- fonts -->   
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text:600&amp;subset=latin-ext" rel="stylesheet">
+       <!-- Bootstrap-->     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
+    <!-- style -->    
+    <link href= "styles/style.css" rel="stylesheet" type="text/css">  	   
+        <!-- !!! Obowiązkowa pozycja zapewnia rasponsywaność --> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <!-- skrypty -->   
+        <!-- kompatybilność z IE9 -->   
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->        
+  </head>  
+  <body>  
+    <header>
+      <h1>Memory game.</h1>
+      <h2> How to play?</h2>  
+      <p>Find pairs of images under the following tiles. Less moves means better result.</p>   
+    </header>
+    <main>
+       <div class= "buttons">        
+          <button class = "btn col-sm-12 col-md-3" type="button" onclick="game16()"> Game 16 fields</button>
+          <button class = "btn col-sm-12 col-md-3" type="button" onclick="game32()"> Game 30 fields</button>
+          <button class = "btn col-sm-12 col-md-3" type="button" onclick="reset()"> Reset</button>       
+      </div>         
+        <div class="game"></div>  
+        <div class="score"></div>           
+    </main>     
+     <script src="scripts/jquery-3.3.1.min.js"></script>  
+    <script src="scripts/main.js"></script>   
+  </body>
+</html>
